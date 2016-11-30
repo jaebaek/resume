@@ -1,0 +1,38 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+\usepackage{color}
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Jaebaek Seo}\\
+   \vspace{0.1in}
+{\large Curriculum Vitae}     % the \\[12pt] adds a blank
+   \vspace{0.1in}
+\end{center}
+                            % line after name
+
+\address{\bf CONTACT\\Email: jaebaek at kaist.ac.kr\\
+Homepage: \url{http://cps.kaist.ac.kr/~jaebaek}\\
+Mobile: +82-10-2513-1216}
+\address{Jaebaek Seo is a Ph.D. student\\
+in Computer Science at KAIST\\
+(Korea Advanced Institute of Science),\\
+Daejeon, South Korea.}
+
+\begin{resume}
+
+\input{education.tex}
+\input{research.tex}
+\input{experience.tex}
+\input{teaching.tex}
+\input{refer.tex}
+
+\end{resume}
+\end{document}
